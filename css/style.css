@@ -194,6 +194,14 @@ h2 {
 	text-transform: uppercase;
 	color: #566366;
 }
+.col-4-hobby p {
+	margin-top: 50px;
+}
+.col-4-hobby {
+	width: 33.33%;
+	float: left;
+	margin: 100px 0;
+}
 .about-para {
 	margin: 40px 0;
 }
@@ -229,6 +237,9 @@ progress {
 	height: 20px;
 	background: #f2f2f1;
 }
+.responsive {
+	margin-bottom: 0;
+}
 progress::-webkit-progress-bar {
     background: #f2f2f1;
 }
@@ -237,4 +248,10 @@ progress::-webkit-progress-value {
 }
 progress::-moz-progress-bar {
     background-color: #2ecc71;
+}
+.portfolio-row {
+}
+.proj-img img{
+	width: 33.33%;
+	float: left;
 }
