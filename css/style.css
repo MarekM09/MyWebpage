@@ -51,10 +51,10 @@ table {
 
 
 /* HELPER CLASSES BEGIN */
-.alignLeft {
+.left {
     float: left;
 }
-.alignRight {
+.right {
     float: right;
 }
 .margin-bottom-10 {
@@ -96,18 +96,22 @@ body {
 	color: #919191;
 }
 #hero {
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero-bg.jpg");
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero-bg.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	height: 100vh;
 }
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
+	overflow: hidden;
+	vertical-align: middle;
 }
 .title {
 	text-align: center;
-	padding: 250px 0;
+	margin-top: calc((100vh - 100px)/2);
 }
 h4 {
 	display:inline-block; 
@@ -122,7 +126,7 @@ h4 {
 }
 .cta-button {
 	display: block;
-	width: 200px;
+	width: 300px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	padding: 15px 25px;
@@ -132,11 +136,13 @@ h4 {
 	margin: 0 auto;
 	margin-top: 50px;
 	border: 1px solid #ffffff;	
+	-webkit-transition: .3s;	
 	transition: .3s;
 }
 .cta-button:hover {	
 	border: 1px solid #2ecc71;
 	color: #2ecc71;
+	-webkit-transition: .3s;
 	transition: .3s
 }
 #navigation {
@@ -161,9 +167,74 @@ h4 {
 	color: #ffffff;
 	font-weight: 500;
 	margin-left: 40px;
+	-webkit-transition: .3s;
 	transition: .3s;
 }
 .nav li a:hover {
 	color: #2ecc71;
+	-webkit-transition: .3s;
 	transition: .3s;
+}
+#about {
+	background-color: #f2f2f2;
+	vertical-align: middle;
+}
+.my-foto {
+	width: 40%;
+}
+.about-me {
+	width: 50%;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+h2 {
+	font-size: 1.7rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #566366;
+}
+.about-para {
+	margin: 40px 0;
+}
+#skills .container {
+	margin: 100px auto;
+}
+.col-4-skill {
+	width: 50%;
+}
+.skill-dsc {
+	padding-right: 30px
+}
+.skill-dsc p {
+	margin-top: 45px;
+}
+.skill-bars {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+h3 {
+	font-size: 1.2rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #566366;
+}
+progress {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: #2ecc71;
+	border: none;
+	height: 20px;
+	background: #f2f2f1;
+}
+progress::-webkit-progress-bar {
+    background: #f2f2f1;
+}
+progress::-webkit-progress-value {
+    background-color: #2ecc71;
+}
+progress::-moz-progress-bar {
+    background-color: #2ecc71;
 }
