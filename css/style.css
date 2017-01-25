@@ -249,9 +249,58 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     background-color: #2ecc71;
 }
-.portfolio-row {
+#portfolio {
+	overflow: hidden;
+	background-color: #f2f2f1;
 }
-.proj-img img{
+#portfolio .container {
+	text-align: center;
+	margin: 100px auto;
+}
+#portfolio h2 {
+	margin-bottom: 50px;
+}
+.proj-img {	
+	background-size: cover;
+	background-position: center;
 	width: 33.33%;
+	height: 375px;
 	float: left;
+	border: 2px solid #ffffff;
+}
+.img-1 {
+	background-image: url("../img/proj.jpg");
+}
+.img-2 {
+	background-image: url("../img/proj2.jpg");
+}
+.img-3 {
+	background-image: url("../img/proj3.jpg");
+}
+.img-4 {
+	background-image: url("../img/proj4.jpg");
+}
+.img-5 {
+	background-image: url("../img/proj5.jpg");
+}
+.img-6 {
+	background-image: url("../img/proj6.jpg");
+}
+.img-1:hover {
+	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj.jpg");
+}
+.img-2:hover {
+	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj2.jpg");
+}
+.img-3:hover {
+	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj3.jpg");
+}
+.img-4:hover {
+	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj4.jpg");
+}
+.img-5:hover {
+	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj5.jpg");
+}
+.img-6:hover {
+	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj6.jpg");
 }
