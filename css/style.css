@@ -267,13 +267,32 @@ progress::-moz-progress-bar {
 	width: 33.33%;
 	height: 375px;
 	float: left;
-	border: 2px solid #ffffff;
+	border: 2px inset solid #ffffff;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.proj-icon {
+	margin: 155px 20px;	
+	display: none;
+}
+.proj-img:hover .proj-icon {
+	display: inline-block;
+}
+.hov-color {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #2ecc71;
+	opacity: 0;
+	transition-duration: .3s;
+	z-index: -1;
 }
 .img-1 {
-	background-image: url("../img/proj.jpg");
+	background-image: url("../img/mobileapp.jpg");
 }
 .img-2 {
-	background-image: url("../img/proj2.jpg");
+	background-image: url("../img/brochure.jpg");
 }
 .img-3 {
 	background-image: url("../img/proj3.jpg");
@@ -287,23 +306,9 @@ progress::-moz-progress-bar {
 .img-6 {
 	background-image: url("../img/proj6.jpg");
 }
-.img-1:hover {
-	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj.jpg");
-}
-.img-2:hover {
-	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj2.jpg");
-}
-.img-3:hover {
-	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj3.jpg");
-}
-.img-4:hover {
-	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj4.jpg");
-}
-.img-5:hover {
-	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj5.jpg");
-}
-.img-6:hover {
-	background-image: linear-gradient(rgba(89, 208, 139, 0.75), rgba(89, 208, 139, 0.75)), url("../img/proj6.jpg");
+.proj-img:hover .hov-color {
+	background-color: #2ecc71;
+	opacity: .75;
 }
 #contact {
 	background-color: #252e30;
