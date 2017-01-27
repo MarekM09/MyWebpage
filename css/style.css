@@ -69,6 +69,9 @@ table {
 .margin-bottom-40 {
     margin-bottom: 40px;
 }
+.padding-right-20 {
+	padding-right: 20px;
+}
 strong,
 b {
     font-weight: 700;
@@ -83,10 +86,14 @@ ol li {
     font-size: 18px;
     line-height: 24px;
 }
-/*HELPER CLASSES END*/
+.floatfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+/* HELPER CLASSES END */
 
-
-/* GENERAL RULES*/
+/* GENERAL RULES */
 * {
    box-sizing: border-box; 
 }
@@ -103,15 +110,18 @@ body {
 	background-attachment: fixed;
 	height: 100vh;
 }
+#hero .container {
+	overflow: hidden;
+}
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
-	overflow: hidden;
-	vertical-align: middle;
+	padding: 100px 0;
+	position: relative;
 }
 .title {
 	text-align: center;
-	margin-top: calc((100vh - 100px)/2);
+	margin-top: calc((100vh - 300px)/2);
 }
 h4 {
 	display:inline-block; 
@@ -148,6 +158,10 @@ h4 {
 #navigation {
 	background-color: #252e30;
 }
+#navigation .container {
+	padding: 0;
+	height: 70px;
+}
 .logo {
 	height: 50px;
 	margin: 10px 0;
@@ -157,16 +171,12 @@ h4 {
 	line-height: 70px;
 	letter-spacing: 0.5px;
 }
-.navbar {
-	float: right;
-
-}
 .nav li a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #ffffff;
 	font-weight: 500;
-	margin-left: 40px;
+	margin-left: 35px;
 	-webkit-transition: .3s;
 	transition: .3s;
 }
@@ -177,14 +187,12 @@ h4 {
 }
 #about {
 	background-color: #f2f2f2;
-	vertical-align: middle;
 }
 .my-foto {
 	width: 40%;
 }
 .about-me {
 	width: 50%;
-	margin-top: 100px;
 	margin-left: 100px;
 }
 h2 {
@@ -200,13 +208,9 @@ h2 {
 .col-4-hobby {
 	width: 33.33%;
 	float: left;
-	margin: 100px 0;
 }
 .about-para {
-	margin: 40px 0;
-}
-#skills .container {
-	margin: 100px auto;
+	margin-top: 40px;
 }
 .col-4-skill {
 	width: 50%;
@@ -252,11 +256,9 @@ progress::-moz-progress-bar {
 #portfolio {
 	overflow: hidden;
 	background-color: #f2f2f1;
-	padding-bottom: 100px;
 }
 #portfolio .container {
 	text-align: center;
-	margin: 100px auto;
 }
 #portfolio h2 {
 	margin-bottom: 50px;
@@ -318,8 +320,6 @@ progress::-moz-progress-bar {
 	margin-bottom: 50px;
 }
 #contact .container {
-	padding-bottom: 100px;
-	padding-top: 100px; 
 	text-align: center;
 }
 .contact-para {
@@ -331,4 +331,70 @@ footer {
 	padding: 50px;
 	text-align: center;
 	text-transform: uppercase;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1200px) {
+	.container {
+		padding: 60px;
+	}
+	.about-me {
+		margin-left: 50px;
+	}
+	#navigation .container {
+		height: 100%;
+		padding: 0 50px;
+		overflow: hidden;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 820px) {
+	#hero .container {
+		padding: 0;
+	}
+	.col-4-hobby {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.margin-bottom {
+		margin-bottom: 50px;
+	}
+	.proj-img {
+		width: 100%;
+		float: none;
+	}
+	.right,
+	.left {
+		float: none;
+	}
+	.my-foto {
+		width: 100%;
+	}
+	.about-me {
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		margin-top: 40px;
+	}
+	.padding-right-20 {
+		padding: 0;
+	}
+	.navbar {
+		text-align: center;
+	}
+	.nav li a {
+		margin: 10px;
+	}
+	.col-4-skill {
+		width: 100%;
+	}
+	.skill-bars {
+		padding: 0;
+		padding-top: 40px
+	}
+}
+@media only screen and (max-width: 600px) {
+	nav {
+		display: none;
+	}
 }
